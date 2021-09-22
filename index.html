@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.google.com/share?selection.family=Poppins:wght@400;500;700"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <title>Video pLayer</title>
+</head>
+<body>
+  <div class="wrapper">    
+    <div class="player">
+      <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" width="450px" poster="./images/poster.jpg"   id="video" ></video>
+      <div class="player-overlay">
+        <h2 class="player-title">Musica para Programar</h2>
+        <div class="player-action">   
+          <button class="button" id="backward" aria-label="retroceder 10 segundos" title="Retroceder 10 segundos"></button>  
+          <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+          <button class="button" id="pause" hidden aria-label="Pausar" title="Pausar"></button>
+          <button class="button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos"></button> 
+        </div>          
+        <div class="player-progress">
+          <input type="range" min="0" value="0" step="1" id="progress">
+         </div>
+      </div>
+        
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
